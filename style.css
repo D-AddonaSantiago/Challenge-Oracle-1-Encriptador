@@ -1,0 +1,256 @@
+body {
+    background-color: #f3fcf8;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.text-input {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 40vw;
+    height: 80vh;
+}
+
+#textarea-encript {
+    margin-top: 30px;
+    height: 100%;
+    border: none;
+    outline: none !important;
+    resize: none;
+    background: #f3fcf8;
+    color: #096d47;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+}
+
+.buttons {
+    height: 19%;
+    margin-bottom: 5vh;
+}
+
+.buttons p {
+    display: flex;
+    opacity: 0.8;
+    color: #495057;
+    margin: 15px;
+    font-size: 17px;
+}
+
+.btns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 65%;
+
+}
+
+#encript {
+    width: 50%;
+    height: 100%;
+    border-radius: 24px;
+    background: #0fa56b;
+    box-sizing: border-box;
+    margin: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+#encript:hover {
+    cursor: pointer;
+    background: #0b8154;
+}
+
+#encript:active {
+    background: #0a6a46;
+}
+
+#decript {
+    width: 50%;
+    height: 100%;
+    border-radius: 24px;
+    background: #D8DFE8;
+    box-sizing: border-box;
+    margin: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #096d47;
+}
+
+#decript:hover {
+    cursor: pointer;
+    background: #c4d1dd;
+}
+
+#decript:active {
+    background: #b3c0cc;
+}
+
+.text-output {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    width: 350px;
+    margin-bottom: 2.5vh;
+}
+
+#textarea-decript {
+    width: 80%;
+    height: 95%;
+    font-size: 24px;
+    padding: 25px;
+    color: #495057;
+    display: none;
+}
+
+#default-message {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #343A40;
+    align-self: center;
+    display: block;
+
+}
+
+footer {
+    height: 5vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer p {
+    list-style: none;
+    font-size: larger;
+    margin: 0px;
+}
+
+#copy-button {
+    width: 80%;
+    height: 10%;
+    margin-bottom: 10px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 24px;
+    display: none;
+}
+
+#copy-button:hover {
+    cursor: pointer;
+    background: #d1d1d1;
+}
+
+#copy-button:active {
+    background: #bfbfbf;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: auto;
+        width: 100%;
+    }
+
+    .text-input {
+        width: 80%;
+        margin: auto;
+    }
+
+    #encript {
+        width: 80%;
+        margin: 0% 5%;
+    }
+
+    #decript {
+        width: 80%;
+        margin: 0% 5%;
+    }
+
+    .text-output {
+        margin: 50px auto;
+        justify-content: center;
+        width: 85vw;
+        height: auto;
+    }
+
+    #image {
+        display: flex;
+        width: 45%;
+        min-width: 200px;
+    }
+
+    .text-output p {
+        margin: 10px;
+    }
+
+    #copiar {
+        height: 80px;
+        margin-left: 5%;
+    }
+
+    footer {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 470px) and (max-height: 1050px) {
+    #textarea-encript {
+        margin-top: 10px;
+        height: 40vh;
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .buttons p {
+        opacity: 0.8;
+        color: #495057;
+        margin: 15px;
+        font-size: 20px;
+    }
+
+    #encript {
+        width: 100%;
+        margin: auto;
+        font-size: 24px;
+        padding: 5% 10%;
+    }
+
+    #decript {
+        width: 100%;
+        margin: auto;
+        font-size: 24px;
+        padding: 5% 10%;
+    }
+
+    .text-output p {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+}

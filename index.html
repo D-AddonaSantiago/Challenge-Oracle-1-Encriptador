@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="logo">
+        <img src="Imgs/Logo.png" alt="Logo_Alura">
+    </header>
+    <main class="main-container">
+        <div class="text-input">
+            <textarea id="textarea-encript" cols="100" rows="30" placeholder="Texto a encriptar.."></textarea>
+            <div class="buttons">
+                <p><img src="Imgs/icono-exclamacion.png" alt="Icono-Exclamacion">  Sólo letras minúsculas y sin tíldes
+                </p>
+                <div class="btns">
+                    <button id="encript" class="btn-encriptar">Enctiptar</button>
+                    <button id="decript" class="btn-decriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-output">
+            <img id="image" src="Imgs/munheco.png" alt="Munheco">
+            <p id="default-message">No se encontró ningún mensaje</p>
+            <p id="textarea-decript"> Ingrese un texto </p>
+            <button id="copy-button">Copiar</button>
+        </div>
+
+    </main>
+    <footer>
+        <p>Challenge Alura - Oracle Next Education | D'Addona Santiago</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
